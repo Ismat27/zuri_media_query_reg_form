@@ -1,0 +1,110 @@
+:root {
+    --bg-color: hsl(0, 100%, 74%);
+    --bg-color-blue: hsl(248, 32%, 49%);
+    --bg-color-green: hsl(154, 59%, 51%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.clr-white {
+    color: #fff;
+}
+.clr-red {
+    color: var(--bg-color);
+}
+.container {
+    background-color: var(--bg-color);
+    background-image: url('/images/bg-intro-mobile.png');
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+.container > main {
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+    padding-block: 50px;
+}
+.text {
+    margin-bottom: 50px;
+    text-align: center;
+}
+.try-it {
+    background-color: var(--bg-color-blue);
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+form {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    padding-block: 1rem;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.form-data {
+    text-indent: 10px;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+.form-data:focus, .form-data:active {
+    outline: 2px solid hsl(246, 25%, 77%);
+    border: none;
+}
+input[type='submit'] {
+    cursor: pointer;
+    background-color: var(--bg-color-green);
+    border: none;
+}
+.terms > p {
+    text-align: center;
+    font-size: 10px;
+}
+.terms span {
+    font-weight: 700;
+}
+@media screen and (min-width: 800px) {
+    .container {
+        background-image: url('/images/bg-intro-desktop.png');
+    }
+
+    .container > main {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .try-it {
+        padding: 1rem;
+        font-size: 12px;
+    }
+    .text {
+        text-align: start;
+        flex-basis: 50%;
+        margin-bottom: 0;
+        max-width: 500px;
+    }
+    .text > h1 {
+        max-width: 430px;
+    }
+}
