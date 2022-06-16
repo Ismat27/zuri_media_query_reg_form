@@ -26,7 +26,7 @@ body {
 }
 .container {
     background-color: var(--bg-color);
-    background-image: url('/images/bg-intro-mobile.png');
+    background-image: url('./images/bg-intro-mobile.png');
     background-size: cover;
     min-height: 100vh;
     display: grid;
@@ -77,14 +77,14 @@ input[type='submit'] {
 }
 .terms > p {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
 }
 .terms span {
     font-weight: 700;
 }
 @media screen and (min-width: 800px) {
     .container {
-        background-image: url('/images/bg-intro-desktop.png');
+        background-image: url('./images/bg-intro-desktop.png');
     }
 
     .container > main {
